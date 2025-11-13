@@ -36,7 +36,7 @@ The interactive interface uses **Streamlit** and can be exposed publicly via a *
 
 2. **Run the notebook**:
     
-3. **Wait for public URL** — notebook will print it when ready.
+3. **Wait for public URL** — notebook will print it when ready. If, for some reason the link doesn't work, run the notebook again
 
 ---
 
