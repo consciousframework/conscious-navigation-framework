@@ -33,30 +33,10 @@ The interactive interface uses **Streamlit** and can be exposed publicly via a *
 ## How to Run in Google Colab
 
 1. **Open the notebook** in Google Colab.
-2. **Install dependencies** (handled automatically in the notebook):
-    ```bash
-    !pip install -q streamlit qiskit qiskit-aer numpy plotly
-    ```
-3. **Download Cloudflare tunnel** (for public URL):
-    ```python
-    if not os.path.exists("cloudflared"):
-        !wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O cloudflared
-        !chmod +x cloudflared
-    ```
-4. **Kill leftover processes** (clean start):
-    ```bash
-    !pkill -f streamlit || echo "No previous Streamlit process"
-    !pkill -f cloudflared || echo "No previous Cloudflare tunnel"
-    ```
-5. **Run Streamlit app** (background):
-    ```bash
-    !streamlit run qcai_v1_9.py --server.port=8501 --server.headless=true --server.address=0.0.0.0 > /dev/null 2>&1 &
-    ```
-6. **Launch Cloudflare tunnel**:
-    ```bash
-    !nohup ./cloudflared tunnel --url http://localhost:8501 --loglevel info > cloudflare.log 2>&1 &
-    ```
-7. **Wait for public URL** — notebook will print it when ready.
+
+2. **Run the notebook**:
+    
+3. **Wait for public URL** — notebook will print it when ready.
 
 ---
 
