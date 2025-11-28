@@ -99,7 +99,7 @@ What remains is what you discover directly.
 
 ## Relationship to Universal Framework
 
-**This framework builds on Liquid Coherence Framework v5.5.**
+**This framework builds on Liquid Coherence Framework v5.6.**
 
 Liquid Coherence describes substrate-independent principles that may be valid for any multi-actor system.
 
